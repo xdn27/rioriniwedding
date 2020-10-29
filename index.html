@@ -33,8 +33,15 @@
 
         <audio id="bgm" class="audio" loop autoplay controls>
             <source src="sound.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
         </audio>
+
+        <div id="covid">
+            <div class="dialog">
+                <p>Tamu undangan wajib mematuhi protokol kesehatan covid-19 dengan menggunakan masker, menjaga jarak, tidak bersalaman dan menggunakan hand sanitizer selama di lokasi.</p>
+                <br>
+                <button class="exit-covid">OK</button>
+            </div>
+        </div>
 
         <div id="fullpage">
             <div class="section fp-auto-height-responsive page-1 active">
@@ -242,6 +249,11 @@
                     bgm.play();
                     is_play = true;
                 }
+            });
+
+            $(document).on('click', '.exit-covid', function(e){
+                e.preventDefault();
+                $('#covid').fadeOut(500);
             });
 
 

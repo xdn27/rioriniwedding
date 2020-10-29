@@ -59,6 +59,42 @@ h1{
     }
 }
 
+#covid{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    padding: 200px;
+    background: rgba(255, 255, 255, 0.9);
+
+    > div{
+        margin-top: 100px;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 802px) {
+    #covid{
+        padding: 100px;
+    
+        > div{
+            margin-top: 100px;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+
+button{
+    background: #5cb85c;
+    border: 0;
+    padding: 15px 30px;
+    color: white;
+}
+
 .page-1{
     .nama-1{
         width: 500px;
