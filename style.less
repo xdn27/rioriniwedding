@@ -39,7 +39,7 @@ h1{
     position: relative;
 }
 
-@media screen and (max-height: 701px){
+@media screen and (max-height: 800px){
     .section{
         padding-top: 160px;
         padding-bottom: 120px;
@@ -59,6 +59,23 @@ h1{
         
         img{
             width: 600px;
+        }
+    }
+
+    @media screen and (max-width: 802px) {
+        .nama-1{
+            width: 250px;
+            margin: 30px 0;
+        }
+
+        .decor{
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            img{
+                width: 380px;
+            }
         }
     }
 }
@@ -99,6 +116,43 @@ h1{
         
         img{
             width: 250px;
+        }
+    }
+
+    @media screen and (max-width: 802px) {
+
+        .page-wrapper-2{
+            padding: 0 20px;
+        }
+
+        .nama-cp{
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .dan{
+            width: 65px;
+            margin: 15px 0;
+        }
+
+        .decor{
+            position: absolute;
+            top: -45px;
+            left: -178px;
+            
+            img{
+                width: 360px;
+            }
+        }
+    
+        .decor-2{
+            position: absolute;
+            bottom: 0;
+            left: -30px;
+            
+            img{
+                width: 120px;
+            }
         }
     }
 }
@@ -146,6 +200,55 @@ h1{
             transform: rotate(-26deg);
         }
     }
+
+    @media screen and (max-width: 802px) {
+        .page-wrapper-3{
+            padding: 0 20px;
+        }
+
+        .akad{
+            width: 225px;
+            margin-bottom: 15px;
+        }
+    
+        .nitadenis{
+            width: 110px;
+        }
+
+        .table-date {
+            margin: 0 auto;
+            width: 350px;
+        
+            p, td, div{
+                font-weight: 600;
+            }
+        
+            .t7{
+                font-size: 50px;
+            }
+        
+            .date-line {
+                width: 200px;
+        
+                div{
+                    padding: 15px 0;
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+
+        .decor{
+            position: absolute;
+            top: -40px;
+            right: 0;
+            
+            img{
+                width: 70px;
+                transform: rotate(-26deg);
+            }
+        }
+    }
 }
 
 .page-4{
@@ -165,9 +268,15 @@ h1{
         overflow: hidden;
     }
 
-    @media screen and (max-height: 701px){
+    @media screen and (max-height: 800px){
+
+        &.section{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
         .grid-wrapper{
-            height: 600px;
+            height: 800px;
             overflow: hidden;
         }
     }

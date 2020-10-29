@@ -30,7 +30,7 @@ h1 {
 .section {
   position: relative;
 }
-@media screen and (max-height: 701px) {
+@media screen and (max-height: 800px) {
   .section {
     padding-top: 160px;
     padding-bottom: 120px;
@@ -47,6 +47,20 @@ h1 {
 }
 .page-1 .decor img {
   width: 600px;
+}
+@media screen and (max-width: 802px) {
+  .page-1 .nama-1 {
+    width: 250px;
+    margin: 30px 0;
+  }
+  .page-1 .decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .page-1 .decor img {
+    width: 380px;
+  }
 }
 .page-2 .nama-cp {
   width: 400px;
@@ -77,6 +91,35 @@ h1 {
 }
 .page-2 .decor-2 img {
   width: 250px;
+}
+@media screen and (max-width: 802px) {
+  .page-2 .page-wrapper-2 {
+    padding: 0 20px;
+  }
+  .page-2 .nama-cp {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .page-2 .dan {
+    width: 65px;
+    margin: 15px 0;
+  }
+  .page-2 .decor {
+    position: absolute;
+    top: -45px;
+    left: -178px;
+  }
+  .page-2 .decor img {
+    width: 360px;
+  }
+  .page-2 .decor-2 {
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+  }
+  .page-2 .decor-2 img {
+    width: 120px;
+  }
 }
 .page-3 .akad {
   width: 300px;
@@ -114,6 +157,47 @@ h1 {
   width: 170px;
   transform: rotate(-26deg);
 }
+@media screen and (max-width: 802px) {
+  .page-3 .page-wrapper-3 {
+    padding: 0 20px;
+  }
+  .page-3 .akad {
+    width: 225px;
+    margin-bottom: 15px;
+  }
+  .page-3 .nitadenis {
+    width: 110px;
+  }
+  .page-3 .table-date {
+    margin: 0 auto;
+    width: 350px;
+  }
+  .page-3 .table-date p,
+  .page-3 .table-date td,
+  .page-3 .table-date div {
+    font-weight: 600;
+  }
+  .page-3 .table-date .t7 {
+    font-size: 50px;
+  }
+  .page-3 .table-date .date-line {
+    width: 200px;
+  }
+  .page-3 .table-date .date-line div {
+    padding: 15px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .page-3 .decor {
+    position: absolute;
+    top: -40px;
+    right: 0;
+  }
+  .page-3 .decor img {
+    width: 70px;
+    transform: rotate(-26deg);
+  }
+}
 .page-4 .decor {
   position: absolute;
   top: -80px;
@@ -126,9 +210,13 @@ h1 {
   height: 100%;
   overflow: hidden;
 }
-@media screen and (max-height: 701px) {
+@media screen and (max-height: 800px) {
+  .page-4.section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .page-4 .grid-wrapper {
-    height: 600px;
+    height: 800px;
     overflow: hidden;
   }
 }
