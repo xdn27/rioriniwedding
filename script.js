@@ -27,19 +27,44 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 AOS.init();
+let isAnimate = false;
 
 new fullpage('#fullpage', {
     autoScrolling: true,
-    responsiveHeight: 800,
-    afterSlideLoad: function(){
+    responsiveHeight: 750,
+    afterSlideLoad: function(origin, destination){
         $('.slide.active [data-aos]').addClass("aos-animate");
     },
-    afterLoad: function(){
+    afterLoad: function(origin, destination){
         $('.section.active [data-aos]').addClass("aos-animate");
+
+        if(destination.isLast && !isAnimate){
+
+            let ch = $('.grid-wrapper').closest('.fp-tableCell').attr('style').split(':');
+            let gh = $('.grid-wrapper')[0].scrollHeight;
+
+            animate1();
+
+            function animate1(){
+                $('.grid').animate({
+                    top: ((gh-parseInt(ch[1])) * -1)
+                }, 80000, 'linear', function(){
+                    animate2();
+                });
+            }
+
+            function animate2(){
+                $('.grid').animate({
+                    top: 0
+                }, 80000, 'linear', function(){
+                    animate1();
+                });
+            }
+
+            isAnimate = true;
+        }
     }
 });
-
-// $('.grid').shuffleChildren();
 
 setTimeout(function(){
     $('.grid').masonry({
@@ -47,27 +72,6 @@ setTimeout(function(){
         columnWidth: '.grid-sizer',
         percentPosition: true
     });
-
-    let ch = $('.grid-wrapper').closest('.fp-tableCell').attr('style').split(':');
-    let gh = $('.grid-wrapper')[0].scrollHeight;
-
-    animate1();
-
-    function animate1(){
-        $('.grid').animate({
-            top: ((gh-parseInt(ch[1])) * -1)
-        }, 80000, function(){
-            animate2();
-        });
-    }
-
-    function animate2(){
-        $('.grid').animate({
-            top: 0
-        }, 80000, function(){
-            animate1();
-        });
-    }
 }, 400);
 
 let is_play = false;

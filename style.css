@@ -30,7 +30,7 @@ h1 {
 .section {
   position: relative;
 }
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 750px) {
   .section {
     padding-top: 160px;
     padding-bottom: 120px;
@@ -70,6 +70,11 @@ h1 {
     margin-top: 100px;
     text-align: center;
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 490px) {
+  #covid {
+    padding: 50px;
   }
 }
 button {
@@ -162,6 +167,12 @@ button {
     width: 380px;
   }
 }
+@media screen and (max-width: 490px) {
+  .page-1 .nama-1 {
+    width: 230px;
+    margin: 30px 0;
+  }
+}
 .page-2 .nama-cp {
   width: 400px;
   margin-bottom: 10px;
@@ -221,6 +232,18 @@ button {
     width: 120px;
   }
 }
+@media screen and (max-width: 490px) {
+  .page-2 .nama-cp {
+    width: 260px;
+    margin-bottom: 10px;
+  }
+  .page-2 span {
+    font-size: 12px;
+  }
+  .page-2 p {
+    font-size: 14px;
+  }
+}
 .page-3 .akad {
   width: 300px;
   margin-bottom: 20px;
@@ -265,6 +288,15 @@ button {
 .page-3 .decor-2 img {
   width: 100%;
 }
+.page-3 .table-family .f-left {
+  padding-right: 50px;
+  text-align: right;
+}
+.page-3 .table-family .f-right {
+  border-left: 1px solid black;
+  padding-left: 50px;
+  text-align: left;
+}
 @media screen and (max-width: 802px) {
   .page-3 .page-wrapper-3 {
     padding: 0 20px;
@@ -306,6 +338,54 @@ button {
     transform: rotate(-26deg);
   }
 }
+@media screen and (max-width: 490px) {
+  .page-3 .akad {
+    width: 180px;
+    margin-bottom: 10px;
+  }
+  .page-3 .nitadenis {
+    width: 80px;
+  }
+  .page-3 span,
+  .page-3 a {
+    font-size: 12px;
+  }
+  .page-3 p,
+  .page-3 table,
+  .page-3 td {
+    font-size: 14px;
+  }
+  .page-3 .table-date {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+  }
+  .page-3 .table-date p,
+  .page-3 .table-date td,
+  .page-3 .table-date div {
+    font-weight: 600;
+  }
+  .page-3 .table-date .t7 {
+    font-size: 50px;
+  }
+  .page-3 .table-date .date-line {
+    width: 200px;
+  }
+  .page-3 .table-date .date-line div {
+    padding: 15px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .page-3 .table-family .f-left {
+    padding-right: 10px;
+    text-align: right;
+  }
+  .page-3 .table-family .f-right {
+    border-left: 1px solid black;
+    padding-left: 11px;
+    text-align: left;
+  }
+}
 .page-4 .decor {
   position: absolute;
   top: -80px;
@@ -318,7 +398,7 @@ button {
   height: 100%;
   overflow: hidden;
 }
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 750px) {
   .page-4.section {
     padding-top: 0;
     padding-bottom: 0;
