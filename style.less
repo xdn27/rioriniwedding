@@ -19,6 +19,13 @@ h1{
     font-size: 24px;
 }
 
+h2{
+    a{
+        font-size: inherit;
+        text-decoration: none;
+    }
+}
+
 .center{
     text-align: center;
 }
@@ -356,6 +363,12 @@ button{
     
         .t7{
             font-size: 80px;
+
+            a{
+                font-size: inherit;
+                text-decoration: none;
+                font-weight: 600;
+            }
         }
     
         .date-line {
@@ -612,6 +625,17 @@ button{
         .grid-item--width2 {
             width:  100%;
             height: 200px;
+        }
+    }
+
+    @media only screen and (max-width: 360px){
+        .grid-item{
+            width: 50%;
+            // height: 150px;
+        }
+
+        .grid-item--width2 {
+            width:  100%;
         }
     }
 }
