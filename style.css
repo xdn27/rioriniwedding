@@ -30,7 +30,7 @@ h1 {
 .section {
   position: relative;
 }
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 749px) {
   .section {
     padding-top: 160px;
     padding-bottom: 120px;
