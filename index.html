@@ -176,26 +176,16 @@
                 <div class="grid-wrapper">
                     <div class="grid" style="top: 0px;">
                         <div class="grid-sizer"></div>
-                        <div class="grid-item" style="background: url('images/pw/1.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/3.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/6.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/2.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/7.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/8.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/9.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/10.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/11.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/12.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/13.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/14.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/15.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/16.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/17.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/18.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/19.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/20.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/21.jpg'); background-size: cover;"></div>
-                        <div class="grid-item" style="background: url('images/pw/22.jpg'); background-size: cover;"></div>
+                        <div class="grid-item grid-item--width2" style="background: url('images/pw/1.jpeg') center center; background-size: cover;"></div>
+                        <div class="grid-item grid-item--width2" style="background: url('images/pw/3.jpeg') center center; background-size: cover;"></div>
+                        <div class="grid-item grid-item--height2" style="background: url('images/pw/4.jpeg') center center; background-size: cover;"></div>
+                        <div class="grid-item grid-item--height2" style="background: url('images/pw/5.jpeg') center center; background-size: cover;"></div>
+                        <div class="grid-item" style="background: url('images/pw/6.jpeg') center center; background-size: cover;"></div>
+                        <div class="grid-item" style="background: url('images/pw/2.jpeg') center center; background-size: cover;"></div>
+                        <div class="grid-item" style="background: url('images/pw/7.jpeg') center center; background-size: cover;"></div>
+                        <div class="grid-item" style="background: url('images/pw/8.jpeg') center center; background-size: cover;"></div>
+                        <div class="grid-item grid-item--width2" style="background: url('images/pw/9.jpeg') center center; background-size: cover;"></div>
+                        <div class="grid-item grid-item--width2" style="background: url('images/pw/10.jpeg') center center; background-size: cover;"></div>
                     </div>
                     <div class="grid-alpha"></div>
                 </div>
@@ -208,185 +198,10 @@
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
-        <script src="script.js"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-            https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
-
-
-        <script>
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            var firebaseConfig = {
-                apiKey: "AIzaSyDhAbv34tHgW7PywCYybavvP7ZKqB09qSk",
-                authDomain: "nitadeniswedding.firebaseapp.com",
-                databaseURL: "https://nitadeniswedding.firebaseio.com",
-                projectId: "nitadeniswedding",
-                storageBucket: "nitadeniswedding.appspot.com",
-                messagingSenderId: "315623021370",
-                appId: "1:315623021370:web:68e09b4efda08571e40e03",
-                measurementId: "G-Z08DK2M4GX"
-            };
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-            firebase.analytics();
-            
-            AOS.init();
-            
-            new fullpage('#fullpage', {
-                autoScrolling: true,
-                responsiveHeight: 800,
-                // onLeave: function(){
-                //     $('.section [data-aos]').removeClass("aos-animate");
-                // },
-                // onSlideLeave: function(){
-                //     $('.slide [data-aos]').removeClass("aos-animate");
-                // },
-                afterSlideLoad: function(){
-                    $('.slide.active [data-aos]').addClass("aos-animate");
-                },
-                afterLoad: function(){
-                    $('.section.active [data-aos]').addClass("aos-animate");
-                }
-            });
-            
-            var classes = ['grid-item--width2 grid-item--height2', 'grid-item--width3', 'grid-item--width2 grid-item--height3', 'n'];
-            $('.grid .grid-item').each(function(){
-                $(this).addClass(classes[~~(Math.random()*classes.length)]);
-            });
-
-            setTimeout(function(){
-                $('.grid').masonry({
-                    itemSelector: '.grid-item',
-                    columnWidth: '.grid-sizer',
-                    percentPosition: true
-                });
-
-                let ch = $('.grid-wrapper').closest('.fp-tableCell').attr('style').split(':');
-                let gh = $('.grid-wrapper')[0].scrollHeight;
-
-                animate1();
-
-                function animate1(){
-                    $('.grid').animate({
-                        top: ((gh-parseInt(ch[1])) * -1)
-                    }, 80000, function(){
-                        animate2();
-                    });
-                }
-
-                function animate2(){
-                    $('.grid').animate({
-                        top: 0
-                    }, 80000, function(){
-                        animate1();
-                    });
-                }
-            }, 400);
-
-            let is_play = false;
-            $(document).on('click', 'body', function(){
-
-                if(!is_play){
-                    var bgm = document.getElementById('bgm');
-                    bgm.play();
-                    is_play = true;
-                }
-            });
-
-            $(document).on('click', '.exit-covid', function(e){
-                e.preventDefault();
-                $('#covid').fadeOut(500);
-            });
-
-            function saveToFirebase(name, ucapan) {
-                var obj = {
-                    name: name,
-                    ucapan: ucapan
-                };
-
-                firebase.database().ref('ucapan').push().set(obj)
-                    .then(function(snapshot) {
-                        
-                    }, function(error) {
-                        console.log('error' + error);
-                        error(); // some error method
-                    });
-            }
-
-            $(document).on('click', '.button-ucapan a', function(e){
-                e.preventDefault();
-                $('.form').show();
-                $('.thanks').hide();
-
-                $('.dialog-ucapan').fadeIn();
-            });
-
-            $(document).on('click', '.form-close', function(e){
-                e.preventDefault();
-
-                $('.dialog-ucapan').fadeOut();
-            });
-
-            $(document).on('click', '.form-subimt', function(e){
-                e.preventDefault();
-
-                let n = $('input[name="name"]').val();
-                let u = $('textarea[name="ucapan"]').val();
-
-                if(n != '' && u != ''){
-                    saveToFirebase(n, u);
-                    $('input[name="name"]').val('');
-                    $('textarea[name="ucapan"]').val('');
-                    $('.form').hide(1, function(){
-                        $('.thanks').fadeIn();
-                    });
-                }
-            });
-
-            // saveToFirebase('Nita', 'Barakallah Nita dan Denis..');
-
-            $(window).on('load', function(){
-
-                firebase.database().ref('ucapan').once('value').then(function(snapshot) {
-                    console.log('snapshot', snapshot.val());
-                    let d = snapshot.val();
-                    let n = 1;
-
-                    $.each(d, function(i, v){
-                        let timeout = n * 5000;
-                        let ucapan = v.ucapan + " - " + v.name;
-                        
-                        setTimeout(function(){
-                            displayToast(ucapan);
-                        }, timeout);
-
-                        n++;
-                    });
-                });
-
-                
-            });
-
-            function displayToast(ucapan){
-
-                Toastify({
-                    text: ucapan,
-                    duration: 5000, 
-                    close: true,
-                    gravity: 'bottom',
-                    position: 'center',
-                    backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
-                    stopOnFocus: false,
-                }).showToast();
-            }
-
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -73,10 +73,12 @@ h1 {
   }
 }
 button {
-  background: #5cb85c;
+  background: #67a442;
   border: 0;
   padding: 15px 30px;
   color: white;
+  border-radius: 4px;
+  outline: none;
 }
 .button-ucapan {
   position: fixed;
@@ -87,10 +89,12 @@ button {
 .button-ucapan a {
   display: inline-block;
   padding: 10px 20px;
-  background: #5cb85c;
+  background: #67a442;
   color: white;
   text-decoration: none;
   border-top-left-radius: 8px;
+  font-size: 14px;
+  opacity: 0.9;
 }
 .dialog-ucapan {
   position: fixed;
@@ -113,7 +117,7 @@ button {
 .dialog-ucapan textarea {
   width: 100%;
   max-width: 300px;
-  border: 1px solid #5cb85c;
+  border: 1px solid #67a442;
   margin-bottom: 10px;
   outline: none;
   padding: 10px;
@@ -121,15 +125,15 @@ button {
 .dialog-ucapan a {
   display: inline-block;
   padding: 10px 20px;
-  background: #5cb85c;
-  border: 1px solid #5cb85c;
+  background: #67a442;
+  border: 1px solid #67a442;
   color: white;
   text-decoration: none;
   border-radius: 4px;
 }
 .dialog-ucapan .form-close {
-  color: #5cb85c;
-  border: 1px solid #5cb85c;
+  color: #67a442;
+  border: 1px solid #67a442;
   background: white;
 }
 .page-1 .nama-1 {
@@ -253,6 +257,14 @@ button {
   width: 170px;
   transform: rotate(-26deg);
 }
+.page-3 .decor-2 {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+}
+.page-3 .decor-2 img {
+  width: 100%;
+}
 @media screen and (max-width: 802px) {
   .page-3 .page-wrapper-3 {
     padding: 0 20px;
@@ -332,9 +344,6 @@ button {
   -webkit-filter: grayscale(70%) blur(0.5px);
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  background-image: url(https://unsplash.it/900/900);
-  background-size: cover;
-  background-position: center center;
   transition: all 0.35s ease-in-out;
 }
 .page-4 .grid-item:hover {
@@ -362,6 +371,7 @@ button {
 }
 .page-4 .grid-item--width2 {
   width: 50%;
+  height: 400px;
 }
 .page-4 .grid-item--height2 {
   height: 400px;
@@ -375,5 +385,6 @@ button {
   }
   .page-4 .grid-item--width2 {
     width: 100%;
+    height: 200px;
   }
 }
