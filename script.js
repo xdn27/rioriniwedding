@@ -31,7 +31,7 @@ let isAnimate = false;
 
 new fullpage('#fullpage', {
     autoScrolling: true,
-    responsiveHeight: 620,
+    responsiveHeight: 600,
     afterSlideLoad: function(origin, destination){
         $('.slide.active [data-aos]').addClass("aos-animate");
     },
