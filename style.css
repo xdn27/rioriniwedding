@@ -30,7 +30,7 @@ h1 {
 .section {
   position: relative;
 }
-@media screen and (max-height: 749px) {
+@media screen and (max-height: 619px) {
   .section {
     padding-top: 160px;
     padding-bottom: 120px;
@@ -174,6 +174,10 @@ button {
     margin: 30px 0;
   }
 }
+.page-2 .page-wrapper-2 {
+  position: relative;
+  z-index: 1;
+}
 .page-2 .nama-cp {
   width: 400px;
   margin-bottom: 10px;
@@ -234,6 +238,22 @@ button {
   }
 }
 @media screen and (max-width: 490px) {
+  .page-2 .decor {
+    position: absolute;
+    top: -45px;
+    left: -150px;
+  }
+  .page-2 .decor img {
+    width: 320px;
+  }
+  .page-2 .decor-2 {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+  }
+  .page-2 .decor-2 img {
+    width: 100px;
+  }
   .page-2 .nama-cp {
     width: 260px;
     margin-bottom: 10px;
