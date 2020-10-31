@@ -173,6 +173,12 @@ button {
     width: 230px;
     margin: 30px 0;
   }
+  .page-1 h1 {
+    font-size: 20px;
+  }
+  .page-1 h2 {
+    font-size: 18px;
+  }
 }
 .page-2 .page-wrapper-2 {
   position: relative;
