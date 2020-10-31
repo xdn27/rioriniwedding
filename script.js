@@ -39,7 +39,7 @@ new fullpage('#fullpage', {
     }
 });
 
-$('.grid').shuffleChildren();
+// $('.grid').shuffleChildren();
 
 setTimeout(function(){
     $('.grid').masonry({
