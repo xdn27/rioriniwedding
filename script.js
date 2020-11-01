@@ -138,17 +138,20 @@ $(window).on('load', function(){
     firebase.database().ref('ucapan').orderByChild('timestamp').on('value', function(snapshot){
          
         let d = snapshot.val();
-        let n = 1;
+        let narr = [];
 
         $.each(d, function(i, v){
-            let timeout = n * getRandomArbitrary(5000, 6000);
             let ucapan = v.ucapan + " - " + v.name;
-            
+            narr.push(ucapan);
+        });
+        
+        shuffle(narr);
+        
+        narr.forEach(function(m, i){ 
+            let timeout = (i+1) * getRandomArbitrary(5000, 6000);
             setTimeout(function(){
-                displayToast(ucapan);
+                displayToast(m);
             }, timeout);
-
-            n++;
         });
     });               
 });
@@ -169,3 +172,22 @@ function displayToast(ucapan){
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
 }
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
