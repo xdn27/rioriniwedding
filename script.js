@@ -146,9 +146,9 @@ $(window).on('load', function(){
         });
         
         shuffle(narr);
-
+        
         narr.forEach(function(m, i){ 
-            let timeout = getRandomArbitrary(5500, 6500);
+            let timeout = (i+1) * getRandomArbitrary(5000, 6000);
             setTimeout(function(){
                 displayToast(m);
             }, timeout);
