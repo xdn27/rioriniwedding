@@ -107,6 +107,12 @@
   .page-wrapper-2 .leaf-right {
     right: 20px;
   }
+  .page-wrapper-2 .nama-cpp {
+    height: 50px;
+  }
+  .page-wrapper-2 .nama-cp {
+    height: 50px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .page-wrapper-2 {
