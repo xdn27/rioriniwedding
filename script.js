@@ -13,14 +13,13 @@ $.fn.shuffleChildren = function() {
 };
 
 var firebaseConfig = {
-    apiKey: "AIzaSyDhAbv34tHgW7PywCYybavvP7ZKqB09qSk",
-    authDomain: "nitadeniswedding.firebaseapp.com",
-    databaseURL: "https://nitadeniswedding.firebaseio.com",
-    projectId: "nitadeniswedding",
-    storageBucket: "nitadeniswedding.appspot.com",
-    messagingSenderId: "315623021370",
-    appId: "1:315623021370:web:68e09b4efda08571e40e03",
-    measurementId: "G-Z08DK2M4GX"
+    apiKey: "AIzaSyDMYJq8GBTstvfdaAMqEeLOqDaRsDilWf0",
+    authDomain: "riowedding-1f06b.firebaseapp.com",
+    databaseURL: "https://riowedding-1f06b-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    projectId: "riowedding-1f06b",
+    storageBucket: "riowedding-1f06b.appspot.com",
+    messagingSenderId: "840421623983",
+    appId: "1:840421623983:web:8c5cd3bdad6fbdc1d12c5a"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -39,27 +38,6 @@ new fullpage('#fullpage', {
         $('.section.active [data-aos]').addClass("aos-animate");
 
         if(destination.isLast && !isAnimate){
-
-            let ch = $('.grid-wrapper').closest('.fp-tableCell').attr('style').split(':');
-            let gh = $('.grid-wrapper')[0].scrollHeight;
-
-            animate1();
-
-            function animate1(){
-                $('.grid').animate({
-                    top: ((gh-parseInt(ch[1])) * -1)
-                }, 80000, 'linear', function(){
-                    animate2();
-                });
-            }
-
-            function animate2(){
-                $('.grid').animate({
-                    top: 0
-                }, 80000, 'linear', function(){
-                    animate1();
-                });
-            }
 
             isAnimate = true;
         }
@@ -164,7 +142,7 @@ function displayToast(ucapan){
         close: true,
         gravity: 'bottom',
         position: 'center',
-        backgroundColor: 'linear-gradient(to right, #67a442, #96c93d)',
+        backgroundColor: 'linear-gradient(to right, #874f24, #d17d3d)',
         stopOnFocus: false,
     }).showToast();
 }
